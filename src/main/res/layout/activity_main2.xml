@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/set_visitorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/set_visitornumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_visitorname"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/set_visitorvehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_visitornumber"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/set_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_visitorvehicle"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/set_flatnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_time"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/set_ownername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_flatnumber"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

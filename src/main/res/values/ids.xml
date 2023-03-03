@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="set_name" type="id" />
+    <item name="set_number" type="id" />
+    <item name="set_visitorvehicle" type="id" />
+    <item name="set_time" type="id" />
+    <item name="set_flatnumber" type="id" />
+    <item name="set_ownername" type="id" />
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/visitorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/VisitorName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/VisitorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Visitor Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/visitorname"
+        app:layout_constraintEnd_toStartOf="@+id/visitorname"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/visitornumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/visitorname"
+        app:layout_constraintStart_toStartOf="@+id/visitorname"
+        app:layout_constraintTop_toBottomOf="@+id/visitorname" />
+
+    <TextView
+        android:id="@+id/VisitorNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Visitor Number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/visitornumber"
+        app:layout_constraintEnd_toStartOf="@+id/visitornumber"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/visitorvehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/visitornumber"
+        app:layout_constraintStart_toStartOf="@+id/visitornumber"
+        app:layout_constraintTop_toBottomOf="@+id/visitornumber" />
+
+    <TextView
+        android:id="@+id/VisitorVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Visitor Vehicle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/visitorvehicle"
+        app:layout_constraintEnd_toStartOf="@+id/visitorvehicle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="@+id/visitorvehicle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/visitorvehicle"
+        app:layout_constraintTop_toBottomOf="@+id/visitorvehicle" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/time"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/flatnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/time"
+        app:layout_constraintStart_toStartOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <TextView
+        android:id="@+id/FlatNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Flat Number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/flatnumber"
+        app:layout_constraintEnd_toStartOf="@+id/flatnumber"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ownername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/flatnumber"
+        app:layout_constraintStart_toStartOf="@+id/flatnumber"
+        app:layout_constraintTop_toBottomOf="@+id/flatnumber" />
+
+    <TextView
+        android:id="@+id/OwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Owner Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ownername"
+        app:layout_constraintEnd_toStartOf="@+id/ownername"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="114dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:text="Send Data"
+        app:layout_constraintEnd_toEndOf="@+id/ownername"
+        app:layout_constraintStart_toStartOf="@+id/OwnerName"
+        app:layout_constraintTop_toBottomOf="@+id/ownername" />
+</androidx.constraintlayout.widget.ConstraintLayout>
